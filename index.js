@@ -4,7 +4,7 @@ import $ from "jquery";
 const graphContainer = document.getElementById("graph-container");
 
 // Instantiate the graph.
-const gitgraph = createGitgraph(graphContainer);
+const gitgraph = createGitgraph(graphContainer,{orientation:'horizontal'});
 const master = gitgraph.branch("master");
 master.commit({
     subject: "init commit",
